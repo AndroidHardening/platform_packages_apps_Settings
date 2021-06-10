@@ -5153,4 +5153,45 @@
     <string name="bluetooth_phonebook_access_notification_content" msgid="4280361621526852063">"Niezaufane urządzenie chce uzyskać dostęp do Twoich kontaktów i rejestru połączeń. Kliknij, by wyświetlić szczegóły."</string>
     <string name="bluetooth_phonebook_access_dialog_title" msgid="7624607995928968721">"Zezwolić na dostęp do kontaktów i rejestru połączeń?"</string>
     <string name="bluetooth_phonebook_access_dialog_content" msgid="4766700015848574532">"Niezaufane urządzenie Bluetooth (<xliff:g id="DEVICE_NAME_0">%1$s</xliff:g>) chce uzyskać dostęp do Twoich kontaktów i rejestru połączeń. Chodzi między innymi o dane o połączeniach przychodzących i wychodzących.\n\nTwoje urządzenie nie łączyło się wcześniej z urządzeniem <xliff:g id="DEVICE_NAME_1">%2$s</xliff:g>."</string>
+
+    <!-- Polish translation of GrapheneOS-specific strings -->
+    <string name="bluetooth_timeout">Ograniczenie czasowe Bluetooth</string>
+
+    <string name="bluetooth_timeout_summary">Bluetooth zostanie wyłączony po <xliff:g id="timeout_description">%1$s</xliff:g>, jeżeli nie połączono z żadnym urządzeniem</string>
+    <string name="bluetooth_timeout_summary2">Nie wyłączaj Bluetooth automatycznie</string>
+    <string name="bluetooth_timeout_summary_never">Nigdy</string>
+    <string name="bluetooth_timeout_summary_15secs">15 sekundach</string>
+    <string name="bluetooth_timeout_summary_30secs">30 sekundach</string>
+    <string name="bluetooth_timeout_summary_1min">1 minucie</string>
+    <string name="bluetooth_timeout_summary_2mins">2 minutach</string>
+    <string name="bluetooth_timeout_summary_5mins">5 minutach</string>
+    <string name="bluetooth_timeout_summary_10mins">10 minutach</string>
+    <string name="bluetooth_timeout_summary_30mins">30 minutach</string>
+    <string name="bluetooth_timeout_summary_1hour">1 godzinie</string>
+    <string name="bluetooth_timeout_summary_2hours">2 godzinach</string>
+    <string name="bluetooth_timeout_summary_4hours">4 godzinach</string>
+    <string name="bluetooth_timeout_summary_8hours">8 godzinach</string>
+
+    <string name="bootloader_version">Wersja bootloadera</string>
+    <string name="daltonizer_mode_monochromacy_title">Monochromatyzm</string>
+    <string name="daltonizer_mode_monochromacy_summary">Skala szarości</string>
+    <string name="preferred_network_mode_lte_only_summary">Preferowany tryb sieci: Tylko LTE</string>
+    <string name="network_lte_only">Tylko LTE</string>
+    <string name="network_4G_only">Tylko 4G</string>
+
+    <string name="scramble_pin_title">Mieszanie PIN</string>
+    <string name="scramble_pin_summary">Kontroluje opcję mieszania kolejności cyfr podczas wprowadzania kodu PIN na ekranie blokady.</string>
+    <string name="connectivity_check_title">Sprawdzanie łączności z Internetem</string>
+    <string name="connectivity_check_summary">Adresy HTTP wykorzystywane do sprawdzania połączenia z Internetem.</string>
+    <string name="deny_new_usb_title">Akcesoria USB</string>
+    <string name="auto_reboot_title">Automatyczny restart</string>
+    <string name="auto_reboot_summary">Automatycznie restartuje urządzenie, jeżeli telefon nie był odblokowany w ciągu wybranej liczby godziny.</string>
+    <string name="deny_new_usb_summary">Kontroluj obsługę dla urządzeń USB takich jak wejściowe (mysz, klawiatura, joystick) lub urządzenia przechowywania danych.</string>
+    <string name="keyguard_camera_title">Dostęp do aparatu z ekranu blokady</string>
+    <string name="keyguard_camera_summary">Pozwalaj na dostęp do kamery gdy urządzenie jest zablokowane</string>
+    <string name="native_debug_title">Włącz debugowanie kodu natywnego</string>
+    <string name="native_debug_summary">Generuj przydatne dzienniki zdarzeń/raportów o błędach i pozwól na debugowanie natywnego kodu.</string>
+    <string name="security_settings_fingerprint_settings_screen_lock_category">Ekran blokady</string>
+    <string name="security_settings_fingerprint_settings_use_fingerprint_unlock_phone_title">Pozwól na odblokowanie odciskiem palca</string>
+    <string name="security_settings_fingerprint_settings_use_fingerprint_unlock_phone_summary">Pozwól na odblokowanie blokady ekranu odciskiem palca. Jeżeli wyłączono, odcisk palca nadal może być wykorzystywany przez aplikacje.</string>
 </resources>
