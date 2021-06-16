@@ -223,14 +223,14 @@
 
     <string-array name="connectivity_check_entries">
         <item>GrapheneOS</item>
-		<item>Standard (Google)</item>
-		<item>Disabled (Localhost)</item> 
+	<item>Standard (Google)</item>
+	<item>Disabled (Localhost)</item> 
     </string-array>
 
     <string-array name="connectivity_check_values" translatable="false">
         <item>0</item>
-		<item>1</item>
-		<item>2</item>
+	<item>1</item>
+	<item>2</item>
     </string-array>
 
     <!-- Do not translate. -->
