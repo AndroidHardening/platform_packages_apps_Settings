@@ -30,6 +30,7 @@ import android.provider.Settings;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
@@ -42,6 +43,9 @@ public class ConnectivityCheckPreferenceController
         extends BasePreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener,
                              OnResume {
+    
+    private static final String LOCALHOST_HTTP_URL = 
+    		"http://localhost";
 
     private static final String GRAPHENEOS_CAPTIVE_PORTAL_HTTPS_URL =
             "https://connectivitycheck.grapheneos.network/generate_204";
@@ -64,6 +68,7 @@ public class ConnectivityCheckPreferenceController
 
     private static final int GRAPHENEOS_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 0;
     private static final int STANDARD_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 1;
+    private static final int LOCALHOST_CAPTIVE_PORTAL_HTTP_URL_INTVAL = 2; 
 
     private static final String KEY_CONNECTIVITY_CHECK_SETTINGS =
             "connectivity_check_settings";
@@ -104,7 +109,11 @@ public class ConnectivityCheckPreferenceController
                 mConnectivityPreference.setValueIndex(
                         STANDARD_CAPTIVE_PORTAL_HTTP_URL_INTVAL);
                 break;
-            // intentional fallthrough
+            case LOCALHOST_HTTP_URL:
+	    		mConnectivityPreference.setValueIndex(
+	    				LOCALHOST_CAPTIVE_PORTAL_HTTP_URL_INTVAL);
+	    		break;
+	    		// intentional fallthrough
             case GRAPHENEOS_CAPTIVE_PORTAL_HTTP_URL:
             default:
                 mConnectivityPreference.setValueIndex(
@@ -139,6 +148,10 @@ public class ConnectivityCheckPreferenceController
                     cr, Settings.Global.CAPTIVE_PORTAL_OTHER_FALLBACK_URLS,
                     STANDARD_OTHER_FALLBACK_URLS);
             break;
+        case LOCALHOST_CAPTIVE_PORTAL_HTTP_URL_INTVAL:
+        	Settings.Global.putString(cr, Settings.Global.CAPTIVE_PORTAL_HTTP_URL, 
+        														LOCALHOST_HTTP_URL);
+        	break;
         // intentional fallthrough
         case GRAPHENEOS_CAPTIVE_PORTAL_HTTP_URL_INTVAL:
         default:
